@@ -8,7 +8,7 @@ cd $DIR
 git clone $REPO_URL $REPO_DIR
 cd $REPO_DIR
 
-sh active.sh
+. active.sh
 
 cd ..
 rm -rf $REPO_DIR
