@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+REPO_URL="git@github.com:finagin/one-commit-everyday.git"
+REPO_DIR="oce"
+
+cd $DIR
+git clone $REPO_URL $REPO_DIR
+cd $REPO_DIR
+
+sh active.sh
+
+cd ..
+rm -rf $REPO_DIR
